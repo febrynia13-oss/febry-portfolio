@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------------
+   Global base styles
+--------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink text-text font-body antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  @apply bg-primary/30 text-white;
+}
+
+/* Custom scrollbar — subtle, matches dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #080B10;
+}
+::-webkit-scrollbar-thumb {
+  background: #212B3A;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2E3B4E;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Visible keyboard focus ring for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #22D3EE;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------------------------------------------------------
+   Reusable component classes
+--------------------------------------------------------- */
+@layer components {
+  /* Section wrapper: consistent horizontal padding + max width */
+  .section {
+    @apply mx-auto w-full max-w-6xl px-6 md:px-10;
+  }
+
+  /* Small mono "code comment" eyebrow used above section titles,
+     e.g. "// 02. about-me" — ties section structure to the code theme */
+  .section-tag {
+    @apply font-mono text-sm text-accent/80 mb-3 flex items-center gap-2;
+  }
+
+  /* Glass panel used for cards throughout the site */
+  .glass-panel {
+    @apply bg-surface/70 border border-line backdrop-blur-sm;
+  }
+
+  /* Primary call-to-action button */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3
+           font-body text-sm font-medium text-white shadow-glow-primary
+           transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-glow-accent;
+  }
+
+  /* Secondary / ghost button */
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 rounded-full border border-line px-6 py-3
+           font-body text-sm font-medium text-text
+           transition-all duration-300 hover:border-accent/60 hover:text-accent hover:-translate-y-0.5;
+  }
+
+  /* Technology / skill badge pill */
+  .badge {
+    @apply rounded-full border border-line bg-surface-2 px-3 py-1 font-mono text-xs text-muted;
+  }
+}
