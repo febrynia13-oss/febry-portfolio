@@ -48,14 +48,14 @@ export default function Skills() {
   return (
     <section id="skills" className="section py-24 md:py-32">
       <p className="section-tag">
-        <span className="text-primary"></span> 02. skills
+        <span className="text-primary"></span> 03. skills
       </p>
       <h2 className="font-display text-3xl font-semibold text-text sm:text-4xl">
-        Apa yang saya kuasai
+      Yang lagi aku pelajari & kuasai
       </h2>
       <p className="mt-4 max-w-lg text-muted">
-        Kombinasi tools dan bahasa yang saya gunakan untuk membangun aplikasi dari
-        antarmuka hingga ke lapisan data.
+      Aku suka eksplor berbagai hal di dunia teknologi 
+      mulai dari bikin tampilan web, ngoding, sampai ngurusin data di belakangnya. Ini beberapa tools yang sering aku pakai buat ngerjain project.
       </p>
 
       <motion.div

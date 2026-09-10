@@ -57,7 +57,7 @@ export default function Projects() {
   return (
     <section id="projects" className="section py-24 md:py-32">
       <p className="section-tag">
-        <span className="text-primary"></span> 03. projects
+        <span className="text-primary"></span> 04. projects
       </p>
       <h2 className="font-display text-3xl font-semibold text-text sm:text-4xl">
         Featured Projects

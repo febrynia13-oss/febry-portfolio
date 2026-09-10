@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { Mail, Github, Linkedin, Instagram, Send } from 'lucide-react'
 
 const CONTACT_LINKS = [
-  { icon: Mail, label: 'Email', value: 'febrynia13@gmail.com', href: 'mailto:febrynia13@gmail.com' },
-  { icon: Github, label: 'GitHub', value: 'github.com/febrynia13', href: 'https://github.com13/' },
-  { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/febrynia', href: 'https://linkedin.com/' },
-  { icon: Instagram, label: 'Instagram', value: '@fbrytniazhra.13', href: 'https://instagram.com/' },
+  { icon: Mail, label: 'Email', value: 'febry.nia@example.com', href: 'febrynia13@gmail.com' },
+  { icon: Github, label: 'GitHub', value: 'https://github.com/febrynia13-oss', href: 'https://github.com/' },
+  { icon: Linkedin, label: 'LinkedIn', value: 'https://www.linkedin.com/in/febry-nia-3696593b8/', href: 'https://linkedin.com/' },
+  { icon: Instagram, label: 'Instagram', value: 'fbrytniazhra.13', href: 'https://www.instagram.com/fbrytniazhra.13?igsi=MXVqa3p6ZDIzc2V6bg%3D%3D&utm_source=qr' },
 ]
 
 const fadeUp = {
@@ -32,7 +32,7 @@ export default function Contact() {
         <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-glow-cyan blur-3xl" />
 
         <p className="section-tag justify-center">
-          <span className="text-primary"></span> 04. contact
+          <span className="text-primary"></span> 06. contact
         </p>
         <h2 className="mx-auto max-w-xl font-display text-3xl font-semibold text-text sm:text-4xl">
           Mari berkolaborasi pada proyek berikutnya.

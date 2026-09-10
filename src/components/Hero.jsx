@@ -38,7 +38,7 @@ export default function Hero() {
           </p>
 
           <p className="mt-6 max-w-md text-base leading-relaxed text-muted">
-            Saya adalah mahasiswa Informatika di Universitas Adzkia, saya suka mencari tentang teknologi yang canggih dan inggin mendalam menjadi seorang
+            Saya adalah mahasiswa Informatika yang sedang menempa diri menjadi seorang
             Software Engineer — fokus membangun aplikasi web dengan fondasi kode yang
             rapi, terstruktur, dan siap berkembang, tanpa mengabaikan pengalaman
             pengguna yang nyaman digunakan.
@@ -99,8 +99,14 @@ function ProfileCard() {
     <motion.div
       whileHover={{ y: -6 }}
       transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-      className="relative aspect-[3/4] w-72 overflow-hidden rounded-[28px] border border-line bg-surface shadow-glow-primary sm:w-80"
+      className="group relative aspect-[3/4] w-72 overflow-hidden rounded-[28px] border border-line bg-surface shadow-glow-primary sm:w-80"
     >
+      {/* Shine sweep — a soft white diagonal band that glides across the
+          card on hover, like light reflecting off glass */}
+      <div className="pointer-events-none absolute inset-0 z-20 overflow-hidden rounded-[28px]">
+        <div className="absolute -inset-y-12 -left-1/3 w-1/3 -translate-x-[160%] rotate-12 bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-[420%]" />
+      </div>
+
       {/* Photo — replace the placeholder below with a real photo */}
       {/* TODO: ganti placeholder ini dengan foto asli Anda.
           Simpan foto di: src/assets/images/profile.jpg
@@ -111,7 +117,7 @@ function ProfileCard() {
       {/* Top gradient + name/role overlay */}
       <div className="absolute inset-x-0 top-0 bg-gradient-to-b from-ink/85 via-ink/20 to-transparent px-6 pb-10 pt-6">
         <p className="font-display text-xl font-semibold text-white drop-shadow-sm">
-          Febry Tania Zahra
+          Febry Nia
         </p>
         <p className="mt-1 font-mono text-xs text-white/70">Software Engineer</p>
       </div>

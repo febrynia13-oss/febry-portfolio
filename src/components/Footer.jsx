@@ -13,14 +13,14 @@ export default function Footer() {
       <div className="section flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
         <div>
           <p className="font-display text-sm text-text">
-            Febry Nia &copy; {year}
+            Febry Tania Zahra &copy; {year}
           </p>
           <p className="font-mono text-xs text-faint">Built with React &amp; curiosity.</p>
         </div>
 
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/"
+            href="https://github.com/febrynia13-oss"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
@@ -29,7 +29,7 @@ export default function Footer() {
             <Github size={18} />
           </a>
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/febry-nia-3696593b8/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
@@ -38,7 +38,7 @@ export default function Footer() {
             <Linkedin size={18} />
           </a>
           <a
-            href="mailto:febry.nia@example.com"
+            href="febrynia13@gmail.com"
             aria-label="Email"
             className="text-muted transition-colors hover:text-accent"
           >
