@@ -1,3 +1,4 @@
+import profilnia from "../assets/images/profilnia.jpeg";
 import { motion } from 'framer-motion'
 import { Code2, Globe, Database, BarChart3, Brain, User } from 'lucide-react'
 
@@ -152,7 +153,11 @@ function HangingPhoto() {
               Simpan foto di: src/assets/images/profile.jpg
               lalu ganti div di bawah dengan:
               <img src="/src/assets/images/profile.jpg" alt="Febry Nia" className="h-full w-full object-cover" /> */}
-          <img src="src/assets/images/profilnia.jpeg" alt="Febry Nia" className="h-full w-full object-cover" />
+          <img
+  src={profilnia}
+  alt="Febry Nia"
+  className="h-full w-full object-cover"
+/>
         </div>
       </motion.div>
     </div>
