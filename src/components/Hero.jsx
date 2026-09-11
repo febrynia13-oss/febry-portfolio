@@ -1,3 +1,4 @@
+import fotoSaya from "../assets/images/foto-saya.jpeg";
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Instagram, ArrowRight, Mail, User } from 'lucide-react'
 
@@ -112,7 +113,11 @@ function ProfileCard() {
           Simpan foto di: src/assets/images/profile.jpg
           lalu ganti div di bawah dengan:
           <img src="/src/assets/images/profile.jpg" alt="Febry Nia" className="h-full w-full object-cover" /> */}
-      <img src="src/assets/images/foto-saya.jpeg" alt="Febry Nia" className="h-full w-full object-cover" />
+      <img
+    src={fotoSaya}
+    alt="Febry Nia"
+    className="h-full w-full object-cover"
+/>
 
       {/* Top gradient + name/role overlay */}
       <div className="absolute inset-x-0 top-0 bg-gradient-to-b from-ink/85 via-ink/20 to-transparent px-6 pb-10 pt-6">
